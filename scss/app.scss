@@ -1,0 +1,130 @@
+@charset 'utf-8';
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	padding:0rem 3rem 3rem 3rem;
+}
+
+h1 {
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='100' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚀<animateTransform attributeName='transform' begin='0s' dur='2s' type='rotate' from='0 40 40' to='360 40 40' repeatCount='indefinite' /></text></svg>") 16 0,auto;
+}
+
+h1, h2, h3, h4 {
+	color: #000000;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ol, ul {
+	line-height: 1.5;
+	margin: 0;
+	padding:0 ;
+	list-style-position: inside;
+}
+
+
+
+.form {
+	margin:2rem 0;
+	display:flex;
+	flex-wrap:wrap;
+	//background: #fdfdfd;
+	//background: #e6e6e6;
+	@media screen and (min-width:900px) {
+		display:grid;
+		//padding: 2rem;
+		grid-template-columns: 300px 1fr;
+	}
+}
+
+.controls {
+	display:flex;
+	flex-direction: column;
+	margin-right:2rem;
+	max-height: 600px;
+	overflow-y: scroll;
+	&__range-warning {
+		color:orangered;
+		visibility: hidden;
+		font-size:0.8rem;
+		padding:0.5rem 0;
+		&.show {
+			visibility: visible;
+		}
+	}
+}
+
+.list {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	display:flex;
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-size:1.3rem;
+	&__custom {
+		input {
+			font-size:1.3rem;
+			width:25px;
+		}
+	}
+	&__label_custom {
+		font-size:1rem;
+	}
+}
+
+.preview {
+	max-width:calc(100% - 5rem);
+	position: relative;
+	&__tester {
+		background-color:#eeeeee;
+		padding:2rem;
+		width:400px;
+		max-width:100%;
+		height:400px;
+		font-size:0.85rem;
+		border:0;
+	}
+	&__copy {
+		padding:1rem;
+		background:white;
+		border:0;
+		position: absolute;
+		left: 0;
+		width: 100px;
+		bottom: 0;
+		@media screen and (min-width:900px) {
+			bottom: 36px;
+		}
+		&:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+}
+
+.icon {
+	&__twitter {
+		//cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🐦</text></svg>") 16 0,auto;
+		cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='70' height='84' viewport='0 0 100 100' style='fill:black;font-size:42px;'><text y='50%'>🐦</text></svg>") 16 0,auto;
+	}
+	&__email {
+		cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='70' height='84' viewport='0 0 100 100' style='fill:black;font-size:42px;'><text y='50%'>📧</text></svg>") 16 0,auto;
+	}
+	&__coffee {
+		cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='70' height='84' viewport='0 0 100 100' style='fill:black;font-size:42px;'><text y='50%'>☕</text></svg>") 16 0,auto;
+	}
+	&__pi {
+		cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='70' height='84' viewport='0 0 100 100' style='fill:black;font-size:42px;'><text y='30%'>π</text></svg>") 16 0,auto;
+	}
+	&__github {
+		cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='70' height='84' viewport='0 0 100 100' style='fill:black;font-size:42px;'><text y='50%'>🔧</text></svg>") 16 0,auto;
+	}
+	&__fox {
+		cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='84' viewport='0 0 100 100' style='fill:black;font-size:42px;'><text y='50%'>🔥</text><text y='55%' x='35%'>🦊</text></svg>") 30 0,auto;
+	}
+}

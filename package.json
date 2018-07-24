@@ -1,0 +1,26 @@
+{
+  "name": "emoji-cursor",
+  "version": "1.0.0",
+  "description": "Create cursors from emojis",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylekelly/emoji-cursor.git"
+  },
+  "author": "Kyle Kelly <kyle@kylekelly.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylekelly/emoji-cursor/issues"
+  },
+  "homepage": "https://github.com/kylekelly/emoji-cursor"
+}
